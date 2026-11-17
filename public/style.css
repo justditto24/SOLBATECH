@@ -1,0 +1,22 @@
+:root{--bs-primary:#1b4db3;--bs-primary-rgb:27,77,179;--bs-link-color:#1b4db3;--bs-link-color-rgb:27,77,179;--bs-body-bg:#f3f5f9;--bs-body-color:#14213d;--bs-body-color-rgb:20,33,61;--bs-border-color:#d3dbe8;--bs-border-radius:.4rem;
+--bs-body-font-family:"Segoe UI Variable Text","Segoe UI",system-ui,Roboto,Arial,sans-serif;--hd:"Bahnschrift","Segoe UI Semibold","Arial Narrow",system-ui,sans-serif;--sb-card:#fff;--sb-sheet:#fbfcfe;--sb-grid:rgba(27,77,179,.1);--sb-brass:#ffc400}
+[data-bs-theme=dark]{--bs-primary:#8db0ff;--bs-primary-rgb:141,176,255;--bs-link-color:#8db0ff;--bs-link-color-rgb:141,176,255;--bs-body-bg:#0a1224;--bs-body-color:#e6ecf7;--bs-body-color-rgb:230,236,247;--bs-border-color:#223357;--sb-card:#101b33;--sb-sheet:#0c1730;--sb-grid:rgba(141,176,255,.11)}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-4,.brand{font-family:var(--hd);letter-spacing:-.01em}
+.card,.offcanvas,.list-group-item,.accordion-item{--bs-card-bg:var(--sb-card);--bs-offcanvas-bg:var(--sb-card);--bs-list-group-bg:var(--sb-card)}
+.sb-surface{background:var(--sb-card)}.top-note{background:#0f1e3d;color:#b8c4dc}
+.btn-brand{--bs-btn-bg:#ffc400;--bs-btn-border-color:#d9a900;--bs-btn-color:#14213d;--bs-btn-hover-bg:#ffd23d;--bs-btn-hover-border-color:#d9a900;--bs-btn-hover-color:#14213d;--bs-btn-active-bg:#e6b000;--bs-btn-active-color:#14213d;--bs-btn-disabled-bg:#ffc400;--bs-btn-disabled-color:#14213d;--bs-btn-disabled-border-color:#d9a900;font-weight:700}
+.btn:focus-visible,a:focus-visible,.form-control:focus-visible{outline:3px solid var(--sb-brass);outline-offset:2px}
+.mark{width:38px;height:38px;background:var(--sb-brass);border-radius:4px;color:#14213d;display:grid;place-items:center}.mark .gl{width:26px;height:26px}
+.brand{font-weight:700;font-size:1.35rem;line-height:1}.brand small{display:block;font-size:.78rem;font-weight:500;color:var(--bs-secondary-color);margin-top:.2rem}
+.navbar .nav-link.on{box-shadow:inset 0 -3px var(--sb-brass);font-weight:600}
+.sheet{border:2px solid var(--bs-body-color);border-radius:2px;background:linear-gradient(var(--sb-grid) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,var(--sb-grid) 1px,transparent 1px) 0 0/24px 24px,var(--sb-sheet)}
+.sheet svg{display:block;width:100%;height:auto;color:var(--bs-body-color)}.tb{border-top:2px solid var(--bs-body-color);background:var(--sb-card)}.tb>div{padding:.5rem .75rem;border-right:1px solid var(--bs-border-color);border-bottom:1px solid var(--bs-border-color)}.tb small{display:block;color:var(--bs-secondary-color);font-size:.78rem}.tb b{font:700 1.2rem var(--hd)}
+@media(prefers-reduced-motion:no-preference){.dr{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2s ease-out forwards}@keyframes draw{to{stroke-dashoffset:0}}}
+.strip>div{padding:1rem 1rem 1rem 0}.strip b{display:block;font:700 1.05rem var(--hd)}@media(min-width:768px){.strip>div+div{padding-left:1rem;border-left:1px solid var(--bs-border-color)}}
+.tile{position:relative;height:150px;border:1px solid var(--bs-border-color);border-radius:4px;display:grid;place-items:center;color:var(--bs-body-color);background:linear-gradient(var(--sb-grid) 1px,transparent 1px) 0 0/18px 18px,linear-gradient(90deg,var(--sb-grid) 1px,transparent 1px) 0 0/18px 18px,var(--sb-sheet)}
+.tile::after{content:"";position:absolute;left:0;top:0;width:30px;height:6px;background:var(--sb-brass)}.tile.big{height:320px}.gl{width:44%;height:44%}.tile span{position:absolute;right:8px;bottom:5px;font:600 .75rem var(--hd);letter-spacing:.05em;color:var(--bs-secondary-color)}
+.cat .gl{width:40px;height:40px;flex:none}.cat:hover{border-color:var(--bs-body-color)!important}
+.steps{display:flex;list-style:none;padding:0;margin:.8rem 0}.steps li{flex:1;position:relative;font-size:.8rem;color:var(--bs-secondary-color);text-align:center}.steps i{display:block;width:14px;height:14px;border-radius:50%;background:var(--bs-border-color);margin:0 auto .3rem;position:relative;z-index:1}
+.steps li::before{content:"";position:absolute;top:6px;left:-50%;width:100%;height:2px;background:var(--bs-border-color)}.steps li:first-child::before{display:none}.steps .done{color:var(--bs-body-color);font-weight:600}.steps .done i,.steps .done::before{background:var(--sb-brass)}
+.side{position:sticky;top:5.5rem}@media(max-width:991px){.side{position:static}}
+.offcanvas{--bs-offcanvas-width:400px}

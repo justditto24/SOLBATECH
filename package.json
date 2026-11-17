@@ -1,0 +1,1 @@
+{ "name": "solbatec-industries", "version": "1.0.0", "description": "SOLBATEC Industries ordering website (zero-dependency Node.js)", "main": "server.js", "scripts": { "start": "node server.js" }, "engines": { "node": ">=18" } }
